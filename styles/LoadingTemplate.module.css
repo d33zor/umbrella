@@ -1,0 +1,40 @@
+.Template {
+  opacity: 0.6;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Spinner {
+  display: inline-block;
+  position: relative;
+  width: 36px;
+  height: 36px;
+}
+.Spinner div {
+  position: absolute;
+  border: 2px solid var(--orange-color);
+  opacity: 1;
+  border-radius: 50%;
+  animation: loading 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+.Spinner div:nth-child(2) {
+  animation-delay: -0.5s;
+}
+@keyframes loading {
+  0% {
+    top: 18px;
+    left: 18px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+    width: 36px;
+    height: 36px;
+    opacity: 0;
+  }
+}

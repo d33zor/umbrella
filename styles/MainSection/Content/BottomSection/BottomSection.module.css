@@ -1,0 +1,52 @@
+.Wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 0rem 4rem 0rem 4rem;
+  height: 100%;
+}
+.TitleWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.Title {
+  position: relative;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.TitleType {
+  display: inline-block;
+  position: absolute;
+  left: 9rem;
+}
+.TitleToday {
+  display: inline-block;
+  position: absolute;
+}
+.Icons {
+  display: flex;
+  gap: 1rem;
+}
+@media only screen and (max-width: 866px) {
+  .TitleWrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .Title {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+  .Icons {
+    justify-content: center;
+    padding: 2rem 0 2rem 0;
+  }
+  .Wrapper {
+    padding: 0 3rem;
+  }
+  .TitleToday {
+    position: relative;
+  }
+  .TitleType {
+    left: 7.25rem;
+  }
+}

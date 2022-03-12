@@ -1,0 +1,36 @@
+.Wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: var(--primary-text-color);
+  padding: 2rem;
+  border-radius: 25px;
+  margin-top: 2rem;
+  height: 15%;
+}
+.Description {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.Top {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.Count {
+  color: white;
+  font-size: 2rem;
+  font-size: bold;
+}
+.Level {
+  color: var(--primary-text-color);
+  border-radius: 25px;
+  padding: 0.35rem 0.75rem;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+.Bottom {
+  color: white;
+  font-size: 0.9rem;
+}

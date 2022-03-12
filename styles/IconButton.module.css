@@ -1,0 +1,21 @@
+.Button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: var(--primary-bg-color);
+  fill: var(--primary-text-color);
+  border-radius: 15px;
+  padding: 0.7rem;
+  cursor: pointer;
+  transition: box-shadow 0.3s;
+  color: var(--primary-bg-color);
+  font-family: 'Questrial-Regular', sans-serif !important;
+  gap: 0.5rem;
+}
+.Button:hover {
+  box-shadow: 10px 10px 20px -10px var(--secondary-bg-color-hover);
+}
+.Button:focus {
+  outline: 2px solid var(--orange-color);
+}

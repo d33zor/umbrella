@@ -1,0 +1,121 @@
+.Wrapper {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  background-image: url('../../../../public/images/sunny.png');
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  border-radius: 25px;
+  color: var(--primary-text-color);
+  margin: 0 1rem 0 4rem;
+}
+.Header {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.HeaderTitle {
+  font-weight: bold;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+.HeaderDescription {
+  font-weight: bold;
+  font-size: 0.8rem;
+  letter-spacing: 0.5px;
+}
+.HeaderWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.IconParent {
+  background-color: var(--primary-bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  height: 36px;
+  width: 36px;
+  padding: 0.2rem;
+}
+.Icon {
+  fill: var(--orange-color);
+}
+.TemperatureWrapper {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.Temperature {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.TemperatureNight {
+  font-weight: bold;
+  font-size: 0.8rem;
+  background-color: var(--primary-bg-color);
+  padding: 0.4rem 0.5rem;
+  border-radius: 0.5rem;
+}
+.Cloudiness {
+  margin-top: 1rem;
+  font-weight: bold;
+  font-size: 1rem;
+}
+.AirStats {
+  display: flex;
+  width: 100%;
+  gap: 1rem;
+}
+.AirStat {
+  padding: 1rem;
+  border-radius: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+}
+.Pressure {
+  background-color: var(--primary-text-color);
+  color: var(--primary-bg-color);
+}
+.Visibility {
+  background-color: var(--green-color);
+}
+.Humidity {
+  background-color: var(--primary-bg-color);
+}
+.AirStatTitle {
+  font-size: 0.8rem;
+}
+.AirStatContent {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+@media only screen and (max-width: 1150px) {
+  .Wrapper {
+    margin: 0 3rem;
+  }
+  .AirStats {
+    margin-top: 3rem;
+  }
+
+  .Header {
+    margin-bottom: 3rem;
+  }
+}
+@media only screen and (max-width: 866px) {
+  .Wrapper {
+    margin: 0 3rem;
+  }
+  .AirStats {
+    flex-direction: column;
+    margin-top: 4rem;
+  }
+}

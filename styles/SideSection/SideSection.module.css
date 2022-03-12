@@ -1,0 +1,55 @@
+.Wrapper {
+  width: 30%;
+  background-color: var(--secondary-bg-color);
+  padding: 3rem;
+  overflow: hidden;
+  position: relative;
+}
+.GeneralWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--light-gray-color);
+  height: 10%;
+}
+.Sun {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.General {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.InfoWrapper {
+  display: flex;
+}
+.Temperature {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--orange-color);
+}
+.ButtonContainer {
+  margin-top: 2.5rem;
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+}
+.Info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 1rem;
+}
+@media only screen and (max-width: 1150px) {
+  .Wrapper {
+    width: 100%;
+  }
+  .ButtonContainer {
+    display: none;
+  }
+}

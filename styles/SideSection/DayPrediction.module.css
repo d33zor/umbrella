@@ -1,0 +1,34 @@
+.Wrapper {
+  display: flex;
+  background: var(--primary-bg-color);
+  padding: 1.5rem;
+  border-radius: 25px;
+  margin-top: 1rem;
+}
+.Description {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+  gap: 0.5rem;
+}
+.Date {
+  color: var(--gray-text-color);
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+.Bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Weather {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--primary-text-color);
+}
+.Temperature {
+  color: var(--orange-color);
+  font-size: 1.2rem;
+  font-weight: bold;
+}

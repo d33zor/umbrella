@@ -1,0 +1,45 @@
+.Wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+.ContentWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  height: 100%;
+  margin-top: 10rem;
+}
+.Cards {
+  display: flex;
+  height: 100%;
+}
+.BottomWrapper {
+  height: 100%;
+  background-color: var(--primary-bg-color);
+}
+@media only screen and (max-width: 1150px) {
+  .Wrapper {
+    width: 100%;
+  }
+  .ContentWrapper {
+    margin-top: 7.5rem;
+  }
+  .BottomWrapper {
+    margin-bottom: 2rem;
+  }
+}
+@media only screen and (max-width: 866px) {
+  .Wrapper {
+    height: auto;
+  }
+  .Cards {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+@media only screen and (max-height: 790px) {
+  .ContentWrapper {
+    margin-top: 5rem;
+  }
+}
