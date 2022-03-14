@@ -225,6 +225,7 @@ const SideSection = ({
                   </svg>
                 )
               }
+              label='next-days_button'
             />
           </div>
         )}
