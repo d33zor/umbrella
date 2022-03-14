@@ -2,6 +2,7 @@
   font-family: 'Questrial-Regular';
   src: url('/fonts/Questrial-Regular.ttf');
   font-style: normal;
+  font-display: swap;
 }
 :root {
   --primary-text-color: #192741;

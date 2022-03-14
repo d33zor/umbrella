@@ -4,6 +4,8 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import React, { useEffect, useState } from 'react';
 import styles from '../../../styles/MainSection/SearchBar/SearchBar.module.css';
+import Logo from '../../icons/logo/Logo';
+import LogoSmall from '../../icons/logo/LogoSmall';
 import SearchIcon from '../../icons/other/SearchIcon';
 
 type Props = {
@@ -44,16 +46,7 @@ const SearchBar = ({ location, status, style, type }: Props) => {
       {type && type === 'location' && (
         <Link href='/' passHref={true}>
           <div className={styles.LogoWrapper}>
-            {windowSize && windowSize > 866 ? (
-              <Image src='/logo.svg' width='200px' height='50px' alt='logo' />
-            ) : (
-              <Image
-                src='/logo_small.svg'
-                width='50px'
-                height='50px'
-                alt='logo'
-              />
-            )}
+            {windowSize && windowSize > 866 ? <Logo /> : <LogoSmall />}
           </div>
         </Link>
       )}

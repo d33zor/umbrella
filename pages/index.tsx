@@ -1,6 +1,7 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
+import Logo from '../components/icons/logo/Logo';
 import SearchBar from '../components/MainSection/SearchBar/SearchBar';
 import styles from '../styles/index.module.css';
 
@@ -22,7 +23,7 @@ const Home: NextPage = () => {
           width: '100%',
         }}
       >
-        <Image src='/logo.svg' width='300px' height='100px' alt='logo' />
+        <Logo width={300} height={100} />
         <SearchBar
           style={{ position: 'relative', justifyContent: 'center' }}
           type='main'

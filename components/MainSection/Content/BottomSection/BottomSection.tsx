@@ -132,6 +132,7 @@ const BottomSection = ({
                 <rect x='16' y='9' width='4' height='1' rx='0.5' />
               </svg>
             }
+            label='temperature_button'
           />
           <IconButton
             handleClick={() => {
@@ -152,6 +153,7 @@ const BottomSection = ({
                 />
               </svg>
             }
+            label='precipitation_button'
           />
           <IconButton
             handleClick={() => {
@@ -190,6 +192,7 @@ const BottomSection = ({
                 <circle cx='15' cy='9' r='1' />
               </svg>
             }
+            label='wind_button'
           />
         </div>
       </div>

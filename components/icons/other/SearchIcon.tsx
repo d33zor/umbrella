@@ -6,7 +6,7 @@ type Props = {
 };
 
 const SearchIcon = ({ svgClass, parentClass }: Props) => (
-  <button type='submit' className={parentClass}>
+  <button type='submit' className={parentClass} aria-label='Search'>
     <svg
       width={20}
       height={20}
