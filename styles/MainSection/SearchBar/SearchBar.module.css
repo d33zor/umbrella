@@ -1,14 +1,3 @@
-.Wrapper {
-  position: fixed;
-  background: var(--primary-bg-color);
-  width: 70%;
-  margin: 2rem 0;
-  padding: 1rem 4rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  z-index: 1;
-}
 .Input {
   background: var(--secondary-bg-color);
   border-radius: 1rem;
@@ -17,16 +6,18 @@
   font-family: 'Questrial-Regular', sans-serif;
   letter-spacing: 1px;
   font-weight: bold;
-  color: var(--primary-text-color);
+  color: var(--black-text-color);
   width: 100%;
   font-size: 1rem;
+  transition: background-color var(--dark-mode-transition),
+    color var(--dark-mode-transition);
 }
 .Input:focus {
   outline: 2px solid var(--orange-color);
 }
 .Form {
-  width: 50%;
   position: relative;
+  flex: 1;
 }
 .Icon {
   fill: var(--orange-color);
@@ -41,7 +32,8 @@
   right: 20px;
   top: 6px;
   height: 36px;
-  transition: fill 0.3s, background 0.3s;
+  transition: fill var(--dark-mode-transition),
+    background var(--dark-mode-transition);
 }
 .IconParent:hover {
   background-color: var(--orange-color);
@@ -65,28 +57,12 @@
   width: 100%;
 }
 .LogoWrapper {
+  display: flex;
   cursor: pointer;
   transition: 0.2s;
 }
-.LogoWrapper:hover {
-  filter: contrast(0.6);
-}
-@media only screen and (max-width: 1150px) {
-  .Wrapper {
-    margin: 0;
-    width: 100%;
-  }
-}
 @media only screen and (max-width: 866px) {
-  .Wrapper {
-    padding: 1rem 3rem;
-  }
   .Form {
-    width: 75%;
-  }
-}
-@media only screen and (max-height: 790px) {
-  .Wrapper {
-    margin-top: 0;
+    flex: 1;
   }
 }

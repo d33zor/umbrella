@@ -12,6 +12,7 @@ const AirIcon = ({ svgClass, parentClass }: Props) => (
       height={24}
       xmlns='http://www.w3.org/2000/svg'
       className={svgClass}
+      aria-hidden='true'
     >
       <rect x='2.72727' y='8' width='7.27273' height='2' />
       <circle cx='3' cy='9' r='1' />

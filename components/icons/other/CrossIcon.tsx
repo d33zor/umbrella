@@ -12,6 +12,7 @@ const CrossIcon = ({ svgClass, size }: Props) => (
     height={size || 24}
     viewBox='0 0 24 24'
     className={svgClass}
+    aria-hidden='true'
   >
     <path
       fillRule='evenodd'

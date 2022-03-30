@@ -4,6 +4,7 @@ import styles from '../../styles/MainSection/MainSection.module.css';
 import WeatherCard from './Content/Cards/WeatherCard';
 import AirCard from './Content/Cards/AirCard';
 import BottomSection from './Content/BottomSection/BottomSection';
+import TopNavigation from './TopNavigation';
 
 type Props = {
   data: {
@@ -50,7 +51,7 @@ const MainSection = ({
 }: Props) => {
   return (
     <div className={styles.Wrapper}>
-      <SearchBar location={location} status={status} type='location' />
+      <TopNavigation location={location} status={status} />
       <div className={styles.ContentWrapper}>
         <div className={styles.Cards}>
           <WeatherCard

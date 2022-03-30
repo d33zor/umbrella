@@ -19,9 +19,12 @@
 }
 .Sun {
   font-weight: bold;
+  color: var(--black-text-color);
+  transition: color var(--dark-mode-transition);
 }
 .Time {
-  color: var(--gray-text-color);
+  color: var(--gray-color);
+  transition: color var(--dark-mode-transition);
 }
 @media only screen and (max-width: 1150px) {
   .Wrapper {

@@ -41,6 +41,7 @@ const UVIndex = ({ count }: Props) => {
           </div>
           <motion.div
             className={styles.Level}
+            aria-hidden='true'
             initial={{ background: 'var(--green-color)' }}
             animate={{
               background:

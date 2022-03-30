@@ -6,8 +6,10 @@
   height: 100%;
 }
 .TitleWrapper {
+  color: var(--black-text-color);
   display: flex;
   justify-content: space-between;
+  transition: color var(--dark-mode-transition);
 }
 .Title {
   position: relative;

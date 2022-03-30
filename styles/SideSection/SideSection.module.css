@@ -4,6 +4,7 @@
   padding: 3rem;
   overflow: hidden;
   position: relative;
+  transition: background-color var(--dark-mode-transition);
 }
 .GeneralWrapper {
   display: flex;
@@ -13,6 +14,7 @@
   padding-bottom: 1.5rem;
   border-bottom: 1px solid var(--light-gray-color);
   height: 10%;
+  transition: border-color var(--dark-mode-transition);
 }
 .Sun {
   font-weight: bold;
@@ -44,6 +46,8 @@
   flex-direction: column;
   justify-content: space-between;
   margin-left: 1rem;
+  color: var(--black-text-color);
+  transition: color var(--dark-mode-transition);
 }
 @media only screen and (max-width: 1150px) {
   .Wrapper {

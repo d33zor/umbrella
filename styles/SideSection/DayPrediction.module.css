@@ -4,6 +4,7 @@
   padding: 1.5rem;
   border-radius: 25px;
   margin-top: 1rem;
+  transition: background-color var(--dark-mode-transition);
 }
 .Description {
   width: 100%;
@@ -13,9 +14,10 @@
   gap: 0.5rem;
 }
 .Date {
-  color: var(--gray-text-color);
+  color: var(--gray-color);
   font-weight: bold;
   font-size: 0.9rem;
+  transition: color var(--dark-mode-transition);
 }
 .Bottom {
   display: flex;
@@ -25,7 +27,8 @@
 .Weather {
   font-size: 1.2rem;
   font-weight: bold;
-  color: var(--primary-text-color);
+  color: var(--black-text-color);
+  transition: color var(--dark-mode-transition);
 }
 .Temperature {
   color: var(--orange-color);

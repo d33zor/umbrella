@@ -13,6 +13,7 @@ const SunIcon = ({ parentClass, svgSize }: Props) => (
       height={svgSize || '27'}
       viewBox='0 0 27 27'
       fill='none'
+      aria-hidden='true'
     >
       <circle cx='13.5' cy='13.5' r='7.5' fill='url(#paint0_linear_1_17)' />
       <rect x='12' width='2' height='4' rx='1' fill='#FF8E38' />

@@ -1,0 +1,58 @@
+.Wrapper {
+  position: fixed;
+  background: var(--primary-bg-color);
+  width: 70%;
+  margin: 2rem 0;
+  padding: 1rem 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1;
+  transition: background-color var(--dark-mode-transition);
+}
+.LogoContainer {
+  display: flex;
+  cursor: pointer;
+  transition: var(--dark-mode-transition);
+}
+.SearchBarWrapper {
+  width: 50%;
+  display: flex;
+  gap: 1rem;
+}
+.IconParent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--primary-bg-color);
+  border-radius: 50%;
+  border: 1px solid var(--light-gray-color);
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+  transition: background-color var(--dark-mode-transition),
+    border var(--dark-mode-transition);
+}
+.LogoContainer:hover {
+  filter: contrast(0.6);
+}
+@media only screen and (max-width: 1150px) {
+  .Wrapper {
+    margin: 0;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 866px) {
+  .Wrapper {
+    padding: 1rem;
+  }
+  .SearchBarWrapper {
+    flex: 1;
+    margin-left: 1rem;
+  }
+}
+@media only screen and (max-height: 790px) {
+  .Wrapper {
+    margin-top: 0;
+  }
+}

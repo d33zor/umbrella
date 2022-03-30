@@ -13,6 +13,7 @@ const SunAndCloudIcon = ({ parentClass, svgSize }: Props) => (
       height={svgSize || '27'}
       viewBox='0 0 28 25'
       fill='none'
+      aria-hidden='true'
     >
       <ellipse
         cx='18.5'

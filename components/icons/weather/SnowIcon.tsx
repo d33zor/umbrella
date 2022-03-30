@@ -13,6 +13,7 @@ const SnowIcon = ({ parentClass, svgSize }: Props) => (
       height={svgSize || '27'}
       viewBox='0 0 25 27'
       fill='none'
+      aria-hidden='true'
     >
       <path
         fillRule='evenodd'

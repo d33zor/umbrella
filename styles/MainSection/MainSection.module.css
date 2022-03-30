@@ -4,11 +4,13 @@
   width: 70%;
 }
 .ContentWrapper {
+  background-color: var(--primary-bg-color);
   display: flex;
   flex-direction: column;
   gap: 4rem;
   height: 100%;
   margin-top: 10rem;
+  transition: background-color var(--dark-mode-transition);
 }
 .Cards {
   display: flex;
@@ -17,6 +19,7 @@
 .BottomWrapper {
   height: 100%;
   background-color: var(--primary-bg-color);
+  transition: background-color var(--dark-mode-transition);
 }
 @media only screen and (max-width: 1150px) {
   .Wrapper {
@@ -40,6 +43,6 @@
 }
 @media only screen and (max-height: 790px) {
   .ContentWrapper {
-    margin-top: 5rem;
+    margin-top: 5.5rem;
   }
 }

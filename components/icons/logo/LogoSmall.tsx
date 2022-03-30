@@ -12,6 +12,7 @@ const LogoSmall = ({ width, height }: Props) => (
     height={height || '50'}
     viewBox='0 0 48 47'
     fill='none'
+    aria-hidden='true'
   >
     <path
       fillRule='evenodd'

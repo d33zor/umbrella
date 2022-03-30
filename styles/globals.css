@@ -5,7 +5,8 @@
   font-display: swap;
 }
 :root {
-  --primary-text-color: #192741;
+  --black-text-color: #000000;
+  --dark-blue-color: #192741;
   --orange-color: #f97f29;
   --light-orange-color: #fa9954;
   --green-color: #cce16a;
@@ -17,7 +18,16 @@
   --gray-color: #5e6477;
   --light-gray-color: #dee3e9;
   --light-gray-color-transparent: #eaedf2;
-  --gray-text-color: #5f6479;
+  --white-text-color: #ffffff;
+  --dark-mode-transition: 0s;
+}
+:root.dark {
+  --primary-bg-color: #181a1b;
+  --light-gray-color: #383c3f;
+  --light-gray-color-transparent: #35393b;
+  --black-text-color: #e8e6e3;
+  --gray-color: #a59d91;
+  --secondary-bg-color: #1e2021;
 }
 html,
 body {
@@ -27,6 +37,8 @@ body {
   height: 100%;
   width: 100%;
   scroll-behavior: smooth;
+  background-color: var(--primary-bg-color);
+  transition: background-color var(--dark-mode-transition);
 }
 #__next {
   height: 100%;
@@ -45,7 +57,7 @@ a {
 }
 .active {
   background-color: var(--orange-color) !important;
-  fill: var(--primary-bg-color) !important;
+  fill: var(--white-text-color) !important;
 }
 .active:hover {
   box-shadow: 10px 10px 20px -10px var(--orange-color) !important;

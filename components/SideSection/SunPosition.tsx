@@ -46,10 +46,20 @@ const SunPosition = ({
 
   return (
     <div className={styles.Wrapper}>
-      <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 266 143' fill='none'>
-        <rect width='266' height='143' fill='#F5F5F5' />
+      <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 266 143'>
+        <rect
+          width='266'
+          height='143'
+          fill='var(--secondary-bg-color)'
+          style={{ transition: 'fill var(--dark-mode-transition)' }}
+        />
         <g id='Group 2'>
-          <path id='Rectangle 6' d='M234 19H30V135H234V19Z' fill='#F5F5F5' />
+          <path
+            id='Rectangle 6'
+            d='M234 19H30V135H234V19Z'
+            fill='var(--secondary-bg-color)'
+            style={{ transition: 'fill var(--dark-mode-transition)' }}
+          />
           {isDayTime && (
             <motion.rect
               id='sun-shadow'
@@ -91,7 +101,8 @@ const SunPosition = ({
             fillRule='evenodd'
             clipRule='evenodd'
             d='M282 0H-18V135H282V0ZM133.5 37C184.586 37 226 78.471 226 129.628H41C41 78.471 82.414 37 133.5 37Z'
-            fill='#F5F5F5'
+            fill='var(--secondary-bg-color)'
+            style={{ transition: 'fill var(--dark-mode-transition)' }}
           />
           {isDayTime && (
             <motion.path
@@ -129,7 +140,7 @@ const SunPosition = ({
                   y='128'
                   width='237.29'
                   height='2'
-                  fill='#F5F5F5'
+                  fill='var(--secondary-bg-color)'
                   fillOpacity='0.01'
                 />
                 <circle
@@ -161,7 +172,7 @@ const SunPosition = ({
                 y='128'
                 width='237.29'
                 height='2'
-                fill='#F5F5F5'
+                fill='var(--secondary-bg-color)'
                 fillOpacity='0.01'
               />
               <g id='Group'>

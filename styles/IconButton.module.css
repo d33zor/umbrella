@@ -4,12 +4,12 @@
   justify-content: center;
   border: none;
   background-color: var(--primary-bg-color);
-  fill: var(--primary-text-color);
+  fill: var(--black-text-color);
   border-radius: 15px;
   padding: 0.7rem;
   cursor: pointer;
-  transition: box-shadow 0.3s;
-  color: var(--primary-bg-color);
+  transition: box-shadow 0.3s, fill 0.3s, background-color 0.3s;
+  color: var(--white-text-color);
   font-family: 'Questrial-Regular', sans-serif !important;
   gap: 0.5rem;
 }

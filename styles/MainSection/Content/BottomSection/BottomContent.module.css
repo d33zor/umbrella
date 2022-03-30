@@ -12,6 +12,7 @@
   height: 100%;
   width: 25%;
   border-right: 1px solid var(--light-gray-color-transparent);
+  transition: border var(--dark-mode-transition);
 }
 .TimeWrapper:last-child {
   border: none;
@@ -20,11 +21,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: white;
+  background: var(--primary-bg-color);
   border-radius: 50%;
   border: 1px solid var(--light-gray-color);
   width: 4rem;
   height: 4rem;
+  transition: background-color var(--dark-mode-transition),
+    border var(--dark-mode-transition);
 }
 
 .IconWrapper {
@@ -39,14 +42,17 @@
   text-align: center;
 }
 .Count {
+  color: var(--black-text-color);
   font-weight: bold;
   font-size: 1.5rem;
+  transition: color var(--dark-mode-transition);
 }
 .Time {
   font-weight: bold;
   font-size: 0.9rem;
   color: var(--gray-color);
   letter-spacing: 1.5px;
+  transition: color var(--dark-mode-transition);
 }
 @media only screen and (max-width: 866px) {
   .Wrapper {

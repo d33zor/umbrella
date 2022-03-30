@@ -9,7 +9,7 @@
   background-position: top center;
   background-repeat: no-repeat;
   border-radius: 25px;
-  color: var(--primary-text-color);
+  color: var(--dark-blue-color);
   margin: 0 1rem 0 4rem;
 }
 .Header {
@@ -33,7 +33,7 @@
   gap: 0.8rem;
 }
 .IconParent {
-  background-color: var(--primary-bg-color);
+  background-color: var(--white-text-color);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -57,7 +57,7 @@
 .TemperatureNight {
   font-weight: bold;
   font-size: 0.8rem;
-  background-color: var(--primary-bg-color);
+  background-color: var(--white-text-color);
   padding: 0.4rem 0.5rem;
   border-radius: 0.5rem;
 }
@@ -82,14 +82,14 @@
   align-items: center;
 }
 .Pressure {
-  background-color: var(--primary-text-color);
-  color: var(--primary-bg-color);
+  background-color: var(--dark-blue-color);
+  color: var(--white-text-color);
 }
 .Visibility {
   background-color: var(--green-color);
 }
 .Humidity {
-  background-color: var(--primary-bg-color);
+  background-color: var(--white-text-color);
 }
 .AirStatTitle {
   font-size: 0.8rem;

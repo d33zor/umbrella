@@ -13,6 +13,7 @@ const CloudIcon = ({ parentClass, svgSize }: Props) => (
       height={svgSize || '27'}
       viewBox='0 0 25 22'
       fill='none'
+      aria-hidden='true'
     >
       <path
         fillRule='evenodd'

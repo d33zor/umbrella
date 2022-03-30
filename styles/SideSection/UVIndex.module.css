@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   gap: 1rem;
-  background: var(--primary-text-color);
+  background: var(--dark-blue-color);
   padding: 2rem;
   border-radius: 25px;
   margin-top: 2rem;
@@ -24,7 +24,7 @@
   font-size: bold;
 }
 .Level {
-  color: var(--primary-text-color);
+  color: var(--dark-blue-color);
   border-radius: 25px;
   padding: 0.35rem 0.75rem;
   font-size: 0.75rem;

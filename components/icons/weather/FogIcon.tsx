@@ -13,6 +13,7 @@ const FogIcon = ({ parentClass, svgSize }: Props) => (
       height={svgSize || '27'}
       viewBox='0 0 30 30'
       fill='none'
+      aria-hidden='true'
     >
       <rect width='30' height='30' />
       <path

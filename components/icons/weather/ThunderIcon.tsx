@@ -13,6 +13,7 @@ const ThunderIcon = ({ parentClass, svgSize }: Props) => (
       height={svgSize || '27'}
       viewBox='0 0 30 30'
       fill='none'
+      aria-hidden='true'
     >
       <path
         fillRule='evenodd'
