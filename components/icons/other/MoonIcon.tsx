@@ -37,7 +37,7 @@ const MoonIcon = ({ svgSize, style }: Props) => {
         isDarkMode === 'true' ? setIsDarkMode('false') : setIsDarkMode('true')
       }
     >
-      {isDarkMode ? (
+      {isDarkMode === 'true' ? (
         <svg
           xmlns='http://www.w3.org/2000/svg'
           width={svgSize || '30'}
