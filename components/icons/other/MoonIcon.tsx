@@ -16,7 +16,7 @@ const MoonIcon = ({ svgSize, style }: Props) => {
         '--dark-mode-transition',
         '0.3s'
       );
-    }, 1);
+    }, 100);
   }, []);
 
   useEffect(() => {
