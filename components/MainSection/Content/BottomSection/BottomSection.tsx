@@ -4,38 +4,18 @@ import { useState } from 'react';
 import styles from '../../../../styles/MainSection/Content/BottomSection/BottomSection.module.css';
 import IconButton from '../../../IconButton';
 import BottomContent from './BottomContent';
+import { Data } from '../../../../types/Data';
 
 type Props = {
-  tempToday?: { [key: string]: { [key: string]: number } };
-  popToday?: { [key: string]: { [key: string]: number } };
-  windToday?: { [key: string]: number };
-  loading?: boolean;
-  offset?: number;
-  dt?: { [key: string]: number };
+  data: {
+    data: Data;
+    offset: number;
+    windowSize: number;
+  };
 };
 
-const BottomSection = ({
-  tempToday,
-  popToday,
-  windToday,
-  loading,
-  offset,
-  dt,
-}: Props) => {
-  const [bottom, setBottom] = useState<string>('temperature');
-
-  const [windowSize, setWindowSize] = useState<number>();
-
-  useEffect(() => {
-    setWindowSize(window.innerWidth);
-    const handleResize = (): void => {
-      setWindowSize(window.innerWidth);
-    };
-
-    window.addEventListener('resize', handleResize);
-
-    return (): void => window.removeEventListener('resize', handleResize);
-  }, []);
+const BottomSection = ({ data: { data, offset, windowSize } }: Props) => {
+  const [bottom, setBottom] = useState('temperature');
 
   return (
     <div className={styles.Wrapper}>
@@ -111,12 +91,7 @@ const BottomSection = ({
             }}
             className={bottom === 'temperature' && 'active'}
             svg={
-              <svg
-                xmlns='http://www.w3.org/2000/svg'
-                width='24'
-                height='24'
-                viewBox='0 0 24 24'
-              >
+              <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'>
                 <path
                   fillRule='evenodd'
                   clipRule='evenodd'
@@ -140,12 +115,7 @@ const BottomSection = ({
             }}
             className={bottom === 'precipitation' && 'active'}
             svg={
-              <svg
-                xmlns='http://www.w3.org/2000/svg'
-                width='24'
-                height='24'
-                viewBox='0 0 24 24'
-              >
+              <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'>
                 <path
                   fillRule='evenodd'
                   clipRule='evenodd'
@@ -170,11 +140,7 @@ const BottomSection = ({
                   d='M9.5 10C11.433 10 13 8.433 13 6.5C13 4.567 11.433 3 9.5 3C7.73676 3 6.27806 4.30385 6.03544 6H8.08535C8.29127 5.4174 8.84689 5 9.5 5C10.3284 5 11 5.67157 11 6.5C11 7.15311 10.5826 7.70873 10 7.91465V8H9.5H6.33682C6.89855 9.18247 8.1038 10 9.5 10Z'
                 />
                 <circle cx='7' cy='6' r='1' />
-                <rect
-                  width='7.27273'
-                  height='2'
-                  transform='matrix(1 0 0 -1 2.72727 16)'
-                />
+                <rect width='7.27273' height='2' transform='matrix(1 0 0 -1 2.72727 16)' />
                 <circle r='1' transform='matrix(1 0 0 -1 3 15)' />
                 <path
                   fillRule='evenodd'
@@ -196,33 +162,9 @@ const BottomSection = ({
           />
         </div>
       </div>
-      {bottom === 'temperature' && (
-        <BottomContent
-          tempToday={tempToday}
-          loading={loading}
-          offset={offset}
-          type='temperature'
-          dt={dt}
-        />
-      )}
-      {bottom === 'precipitation' && (
-        <BottomContent
-          loading={loading}
-          popToday={popToday}
-          offset={offset}
-          type='precipitation'
-          dt={dt}
-        />
-      )}
-      {bottom === 'wind' && (
-        <BottomContent
-          loading={loading}
-          windToday={windToday}
-          offset={offset}
-          type='wind'
-          dt={dt}
-        />
-      )}
+      {bottom === 'temperature' && <BottomContent data={{ data, offset }} type='temperature' />}
+      {bottom === 'precipitation' && <BottomContent data={{ data, offset }} type='precipitation' />}
+      {bottom === 'wind' && <BottomContent data={{ data, offset }} type='wind' />}
     </div>
   );
 };

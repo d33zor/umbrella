@@ -6,13 +6,13 @@ import styles from '../../../styles/MainSection/SearchBar/SearchBar.module.css';
 import SearchIcon from '../../icons/other/SearchIcon';
 
 type Props = {
-  location?: string;
+  location: string;
   status: number;
   style?: CSSProperties;
 };
 
 const SearchBar = ({ location, status, style }: Props) => {
-  const [formValue, setFormValue] = useState<string>('');
+  const [formValue, setFormValue] = useState('');
 
   useEffect(() => {
     location && setFormValue(location);
@@ -20,7 +20,7 @@ const SearchBar = ({ location, status, style }: Props) => {
 
   const router = useRouter();
 
-  const handleSubmit = (e: React.FormEvent): void => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     formValue && formValue != location && router.push(`/location/${formValue}`);
   };
@@ -45,8 +45,7 @@ const SearchBar = ({ location, status, style }: Props) => {
             transition={{ duration: 0.3 }}
             className={styles.Error}
           >
-            Sorry, we could not find this location. Search by ZIP code or try
-            again later.
+            Sorry, we could not find this location. Search by ZIP code or try again later.
           </motion.div>
         )}
         {status === 429 && (
