@@ -6,7 +6,7 @@ import styles from '../../../styles/MainSection/SearchBar/SearchBar.module.css';
 import SearchIcon from '../../icons/other/SearchIcon';
 
 type Props = {
-  location: string;
+  location?: string;
   status: number;
   style?: CSSProperties;
 };
